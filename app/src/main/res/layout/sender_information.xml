@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/background"
+    >
+    <!-- Header -->
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/form_header_height"
+        android:background="@drawable/rounded_header"
+        android:text="@string/sender_details"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+
+
+    <!-- Email Field -->
+    <EditText
+        android:id="@+id/email_field"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/form_field_height"
+        android:layout_below="@id/header_text"
+        android:layout_marginTop="@dimen/form_margin_first"
+        android:layout_marginStart="@dimen/left_right_margin"
+        android:layout_marginEnd="@dimen/left_right_margin"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Email"
+        android:padding="@dimen/form_padding"/>
+
+    <!-- Full Name Field -->
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/form_field_height"
+        android:layout_below="@id/email_field"
+        android:layout_marginStart="@dimen/left_right_margin"
+        android:layout_marginEnd="@dimen/left_right_margin"
+        android:layout_marginTop="@dimen/form_margin"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Full Name"
+        android:padding="@dimen/form_padding"/>
+
+    <!-- Contact Information Field -->
+    <EditText
+        android:id="@+id/contact_field"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/form_field_height"
+        android:layout_below="@id/name_field"
+        android:layout_marginStart="@dimen/left_right_margin"
+        android:layout_marginEnd="@dimen/left_right_margin"
+        android:layout_marginTop="@dimen/form_margin"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Contact Information"
+        android:padding="@dimen/form_padding"/>
+
+    <!-- Country Field -->
+    <EditText
+        android:id="@+id/country_field"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/form_field_height"
+        android:layout_below="@id/contact_field"
+        android:layout_marginStart="@dimen/left_right_margin"
+        android:layout_marginEnd="@dimen/left_right_margin"
+        android:layout_marginTop="@dimen/form_margin"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Country"
+        android:padding="@dimen/form_padding"/>
+
+    <!-- Address Field -->
+    <EditText
+        android:id="@+id/address_field"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/form_field_height"
+        android:layout_below="@id/country_field"
+        android:layout_marginStart="@dimen/left_right_margin"
+        android:layout_marginEnd="@dimen/left_right_margin"
+        android:layout_marginTop="@dimen/form_margin"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Address"
+        android:padding="@dimen/form_padding"/>
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/form_button_height"
+        android:layout_below="@id/address_field"
+        android:layout_marginTop="@dimen/form_margin"
+        android:layout_marginStart="@dimen/button_left_right_margin"
+        android:layout_marginEnd="@dimen/button_left_right_margin"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/red"
+    />
+
+
+</RelativeLayout>
