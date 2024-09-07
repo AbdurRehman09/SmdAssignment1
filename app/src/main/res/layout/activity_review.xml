@@ -1,14 +1,173 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Review">
+    android:id="@+id/main"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <!-- Header -->
     <TextView
+        android:id="@+id/review_header"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_header"
+        android:padding="16dp"
+        android:text="@string/review"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+       />
+
+    <!-- Sender Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/sender_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Name"
+            android:paddingLeft="6dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/sender_country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Country"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/sender_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Address"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/sender_contact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Contact Info"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <!-- Sender Data -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+
+        <!-- Repeat for each data point -->
+        <TextView
+            android:id="@+id/sender_name_data"
+            android:layout_width="0dp"
+            android:paddingLeft="6dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sender_name"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/sender_country_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sender_country"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/sender_address_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sender_address"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/sender_contact_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sender_contact"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <!-- Transaction Arrow -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_compare_arrows_24"
+        android:layout_marginVertical="16dp"
+        android:rotation="90"/>
+
+    <!-- Receiver Section -->
+    <!-- Similar layout as the Sender section for the receiver's details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Repeat for each data point -->
+        <TextView
+            android:id="@+id/receiver_name_data"
+            android:layout_width="0dp"
+            android:paddingLeft="6dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rcvr_name"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/receiver_country_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rcvr_country"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/receiver_address_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rcvr_address"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/receiver_contact_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rcvr_contact"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <!-- Floating Action Button -->
+     <ImageButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_gravity="end|bottom"
+        android:layout_marginTop="350dp"
+        android:src="@drawable/baseline_add_circle_24"
+        android:backgroundTint="@color/background"/>
 
 </LinearLayout>

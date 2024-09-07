@@ -6,4 +6,13 @@
         Reciever\nDetails</string>
     <string name="review">
         Review Information</string>
+    <string name="sender_name">Full Name</string>
+    <string name="sender_country">Country</string>
+    <string name="sender_address">Address</string>
+    <string name="sender_contact">Contact</string>
+    <string name="rcvr_name">Full Name</string>
+    <string name="rcvr_country">Country</string>
+    <string name="rcvr_address">Address</string>
+    <string name="rcvr_contact">Contact</string>
+
 </resources>

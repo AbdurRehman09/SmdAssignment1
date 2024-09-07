@@ -31,7 +31,8 @@
         android:layout_marginEnd="@dimen/left_right_margin"
         android:background="@drawable/rounded_edittext"
         android:hint="Email"
-        android:padding="@dimen/form_padding"/>
+        android:padding="@dimen/form_padding"
+        android:textColor="@color/black"/>
 
     <!-- Full Name Field -->
     <EditText
@@ -44,7 +45,8 @@
         android:layout_marginTop="@dimen/form_margin"
         android:background="@drawable/rounded_edittext"
         android:hint="Full Name"
-        android:padding="@dimen/form_padding"/>
+        android:padding="@dimen/form_padding"
+        android:textColor="@color/black"/>
 
     <!-- Contact Information Field -->
     <EditText
@@ -57,7 +59,8 @@
         android:layout_marginTop="@dimen/form_margin"
         android:background="@drawable/rounded_edittext"
         android:hint="Contact Information"
-        android:padding="@dimen/form_padding"/>
+        android:padding="@dimen/form_padding"
+        android:textColor="@color/black"/>
 
     <!-- Country Field -->
     <EditText
@@ -70,7 +73,8 @@
         android:layout_marginTop="@dimen/form_margin"
         android:background="@drawable/rounded_edittext"
         android:hint="Country"
-        android:padding="@dimen/form_padding"/>
+        android:padding="@dimen/form_padding"
+        android:textColor="@color/black"/>
 
     <!-- Address Field -->
     <EditText
@@ -83,22 +87,23 @@
         android:layout_marginTop="@dimen/form_margin"
         android:background="@drawable/rounded_edittext"
         android:hint="Address"
-        android:padding="@dimen/form_padding"/>
+        android:padding="@dimen/form_padding"
+        android:textColor="@color/black"/>
 
     <!-- Next Button -->
     <Button
         android:id="@+id/next_button"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="@dimen/form_button_height"
         android:layout_below="@id/address_field"
         android:layout_marginTop="@dimen/form_margin"
-        android:layout_marginStart="@dimen/button_left_right_margin"
-        android:layout_marginEnd="@dimen/button_left_right_margin"
+        android:layout_marginStart="130dp"
+        android:gravity="center"
         android:text="NEXT"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:backgroundTint="@color/red"
     />
 
-
 </RelativeLayout>
+
