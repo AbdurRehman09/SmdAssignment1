@@ -1,4 +1,9 @@
 <resources>
     <string name="assignment1">Assignment1</string>
-    <string name="sender_details">Sender\nDetails</string>
+    <string name="sender_details">
+        Sender\nDetails</string>
+    <string name="receiver_details">
+        Reciever\nDetails</string>
+    <string name="review">
+        Review Information</string>
 </resources>
